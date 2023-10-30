@@ -1,0 +1,228 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat';
+    background-color: white;
+}
+
+nav {
+    position: absolute; 
+    top: 0; 
+    width: 100%;
+    background: linear-gradient(to right, #79ADDC, #FCF5CF, #FFEE93);
+    height: 60px;
+    z-index: 1; 
+}
+
+label.logo {
+    color: #141414;
+    font-size: 35px;
+    line-height: 60px;
+    padding: 0 100px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+nav ul li {
+    display: inline-block;
+    line-height: 60px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: black;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+a.active, a:hover {
+    background: #FEFBEC;
+    transition: .5s;
+}
+.checkbtn {
+    font-size: 30px;
+    color:white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+@media (max-width: 1250px){
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+@media (max-width: 1115px){
+    .checkbtn {
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(to right, #79ADDC, #FCF5CF, #FFEE93);
+        top: 60px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    #check:checked ~ ul {
+        left: 0;
+    }
+}
+
+
+
+
+main {
+    position: absolute;
+    top: 80px;
+    background-color: white;
+    text-align: center;
+    font-family: 'Montserrat';
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#section1 {
+    flex: 1;
+    padding: 30px 30px 30px 30px;
+    align-items: center;
+}
+
+h1 {
+    color: rgb(10, 9, 9);
+    font-family: 'Montserrat', Tahoma, Verdana, sans-serif;
+    font-size: 43px;
+    padding: 10px 10px 10px 10px;
+    background-color: #FCF5CF;
+    border: none;
+    border-radius: 17px;
+    margin-bottom: 20px;
+    font-weight: 100;
+}
+
+p {
+    color: black;
+    font-family: 'Montserrat';
+}
+
+#context1 {
+    text-indent: 35px;
+    text-align: justify;
+    font-size: medium;
+}
+
+.box {
+    width: 500px;
+    height: 190px;
+    max-width: 100%;
+    margin: 30px 30px 30px 30px;
+    padding: 30px 30px 30px 30px;
+    align-items: center;
+}
+
+.with-linear-gradient {
+    border-style: solid;
+    border-width: 10px;
+    border-image: linear-gradient(45deg, #79ADDC, #FCF5CF, #FFEE93, #F7B6B6) 1;
+}
+
+.labels {
+    color: black;
+    font-family: 'Montserrat';
+    font-size: 30px;
+}
+
+input[type='date'] {
+    height: 35px;
+    font-size: 24px; 
+    font-family: 'Montserrat';
+}
+
+#submit {
+    color: rgb(10, 9, 9);
+    font-family: 'Montserrat';
+    font-size: 20px;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+    background-color: #FCF5CF;
+    border: none;
+    border-radius: 13px;
+}
+#submit:hover {
+    cursor: pointer;
+}
+
+.gradient-text {
+    font-size: 36px;
+    font-weight: bold;
+    background: linear-gradient(to right, #79ADDC, #FCF5CF, #FFEE93);
+    -webkit-background-clip: text; 
+    background-clip: text;
+    color: transparent;
+}
+
+#result {
+    color: linear-gradient(45deg, #79ADDC, #FCF5CF, #FFEE93, #F7B6B6);
+    font-size: 40px;
+    font-family: 'Montserrat';
+    -webkit-text-stroke: 2px black;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+  
+.fade-in-animation {
+    transform-origin: bottom;
+    animation: fadeIn 0.7s;
+    display: none;
+}
+
+#zodiacArt {
+    display: none;
+    margin: 10px 10px 10px 20px;
+    padding: 10px 10px 10px 10px;
+}
+
+#section2 {
+    flex: 1;
+    padding: 30px 30px 30px 0px;
+}
+
+#zodiacGuideImage {
+    width: fit-content;
+    height: fit-content;
+    border-radius: 20px;
+}
