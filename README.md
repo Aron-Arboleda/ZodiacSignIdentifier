@@ -1,3 +1,8 @@
 # ZodiacSignIdentifier
-a static website to identify your zodiac sign
-<p>Github Pages Link: https://aron-arboleda.github.io/ZodiacSignIdentifier/<p/>
+
+## a simple static website to identify your zodiac sign
+
+<img src='ZODI.png'>
+
+## To use the website
+* Click the link: https://aron-arboleda.github.io/ZodiacSignIdentifier/
