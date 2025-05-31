@@ -6,6 +6,7 @@
 
 ## Info
 
+- **Developer:** [Aron-Arboleda](https://github.com/Aron-Arboleda)
 - **Project Started:** Dec. 2023
 - **Objective:** To create a user-friendly website that determines a person's zodiac sign based on their birth date.
 
